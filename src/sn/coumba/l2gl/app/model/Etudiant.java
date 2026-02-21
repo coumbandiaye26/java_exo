@@ -5,6 +5,7 @@ public class Etudiant {
     private String matricule;
     private String nom;
 
+    private static int compteur = 0;
     // ÉTAPE 2 : Constructeur principal (Complet)
     // Il force la saisie des données dès la naissance de l'objet
     public Etudiant(String matricule, String nom) {
@@ -26,7 +27,8 @@ public class Etudiant {
     public Etudiant(String matricule) {
         this(matricule, "Inconnu"); 
     }
-
+    //this() constructeur
+    
     // ÉTAPE 4 : Getters (Accesseurs)
     // Indispensables pour que la classe Note puisse lire le matricule ou le nom
     public String getMatricule() {
@@ -56,5 +58,8 @@ public class Etudiant {
     @Override
     public String toString() {
         return "Etudiant{matricule=" + matricule + ", nom=" + nom + "}";
+    }
+    public static int getCompteur() {
+        return compteur;
     }
 }
