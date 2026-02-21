@@ -20,7 +20,6 @@ public class Etudiant {
         this.matricule = matricule;
         this.nom = nom;
     }
-
     // ÉTAPE 3 : Constructeur surchargé
     // Permet de créer un étudiant avec juste son matricule (le nom sera "Inconnu")
     // On utilise this(...) pour éviter de dupliquer les validations du dessus
@@ -34,11 +33,9 @@ public class Etudiant {
     public String getMatricule() {
         return matricule;
     }
-
     public String getNom() {
         return nom;
     }
-
     // ÉTAPE 5 : Setter pour le nom uniquement
     // On ne met pas de setter pour le matricule (il est interdit de le changer)
     public void setNom(String nom) {
@@ -47,12 +44,10 @@ public class Etudiant {
         }
         this.nom = nom;
     }
-
     // ÉTAPE 6 : Méthode d'affichage classique
     public void afficher() {
         System.out.println(matricule + " - " + nom);
     }
-
     // ÉTAPE 7 : Redéfinition de toString (Override)
     // Pour que System.out.println(etudiant) affiche du texte et non une adresse mémoire
     @Override
@@ -62,4 +57,8 @@ public class Etudiant {
     public static int getCompteur() {
         return compteur;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6c443915fd843a3f12dce8b6dad8a4201a8a5f9
